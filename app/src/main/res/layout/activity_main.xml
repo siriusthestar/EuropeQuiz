@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.travelquiz.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/venice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_description"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/europe_s" />
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle" />
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venice"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin">
+
+            <TextView
+                style="@style/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:text="@string/question1" />
+
+            <EditText
+                android:id="@+id/capital_text"
+                style="@style/insert_text"
+                android:hint="@string/txt_answer" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                style="@style/radio_group">
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer1_1" />
+
+                <RadioButton
+                    android:id="@+id/bratislava"
+                    style="@style/answer"
+                    android:text="@string/answer1_2" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer1_3" />
+
+            </RadioGroup>
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                style="@style/question"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:text="@string/question3" />
+
+            <CheckBox
+                android:id="@+id/monument"
+                style="@style/answer"
+                android:text="@string/answer3_1" />
+
+            <CheckBox
+                android:id="@+id/country"
+                style="@style/answer"
+                android:text="@string/answer3_2" />
+
+            <CheckBox
+                android:id="@+id/museum"
+                style="@style/answer"
+                android:text="@string/answer3_3" />
+
+            <CheckBox
+                android:id="@+id/castle"
+                style="@style/answer"
+                android:text="@string/answer3_4" />
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question4" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                style="@style/radio_group">
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer4_1" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer4_2" />
+
+                <RadioButton
+                    android:id="@+id/scotia"
+                    style="@style/answer"
+                    android:text="@string/answer4_3" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer4_4" />
+
+            </RadioGroup>
+
+            <View style="@style/horizontal_line" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question5" />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                style="@style/radio_group">
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer5_1" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer5_2" />
+
+                <RadioButton
+                    android:id="@+id/four"
+                    style="@style/answer"
+                    android:text="@string/answer5_3" />
+
+                <RadioButton
+                    style="@style/answer"
+                    android:text="@string/answer5_4" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:layout_marginTop="@dimen/vertical_margin">
+
+                <Button
+                    style="@style/button_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="sbmt"
+                    android:text="@string/result" />
+
+                <Button
+                    style="@style/button_inactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="rset"
+                    android:text="@string/reset" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

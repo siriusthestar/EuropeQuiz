@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Europe Quiz</string>
+    <string name="txt_answer">enter answer here</string>
+    <string name="image_description">venice photo</string>
+    <string name="subtitle">How well do you know Europe?</string>
+    <string name="question1">1. Is Bonn capital of Germany?</string>
+    <string name="question2">2. What is the capital of Slovakia?</string>
+    <string name="answer1_1">Prague</string>
+    <string name="answer1_2">Bratislava</string>
+    <string name="answer1_3">Ljubljana</string>
+    <string name="question3">3. Lichtenstein is: (tick all that apply)</string>
+    <string name="answer3_1">Monument</string>
+    <string name="answer3_2">Country</string>
+    <string name="answer3_3">Museum</string>
+    <string name="answer3_4">Castle</string>
+    <string name="question4">4. Which sea is not in Europe?</string>
+    <string name="answer4_1">North Sea</string>
+    <string name="answer4_2">Adriatic Sea</string>
+    <string name="answer4_3">Scotia Sea</string>
+    <string name="answer4_4">Tyrrhenian Sea</string>
+    <string name="question5">5. How many main languages are spoken in Switzerland?</string>
+    <string name="answer5_1">two</string>
+    <string name="answer5_2">three</string>
+    <string name="answer5_3">four</string>
+    <string name="answer5_4">five</string>
+    <string name="result">SUBMIT</string>
+    <string name="reset">RESET</string>
+    <string name="toast_1">You have answered correctly on</string>
+    <string name="toast_2">questions of 5 possible!\nYou should explore Europe more!</string>
+    <string name="toast_3">correct answers out of 5 total!\nCongratulations, you know Europe really well!</string>
+</resources>

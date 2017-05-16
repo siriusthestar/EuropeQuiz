@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="themeAdjust">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorBack</item>
+        <item name="background">@color/colorBack</item>
+    </style>
+
+    <style name="themeAdjust" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorBack</item>
+    </style>
+
+    <style name="subtitle">
+        <item name="android:textSize">@dimen/textMediumXL</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_margin</item>
+        <item name="android:layout_marginTop">@dimen/vertical_margin_small</item>
+        <item name="android:paddingLeft">@dimen/horizontal_margin</item>
+    </style>
+
+    <style name="insert_text">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:layout_marginTop">@dimen/vertical_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="question">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_margin_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="answer">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/vertical_margin_micro</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_margin</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="radio_group">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="button_active">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorBack</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="button_inactive">
+        <item name="android:textSize">@dimen/textMedium</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+</resources>
+
